@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    background-color: #f5adb9;
+
+}
+
+
+
+.curvas{
+    background: #6e392ee7;
+    color: #FCFBE7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.logo{
+    height: 200px;
+    margin-top: 30px;
+}
+
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+.curvas svg{
+    display: block;
+}
+
+.parrafo{
+    width: 100vw;
+}
+
+.icono_hamburgesa{
+    width: 20px;
+    height: 20px;
+}
