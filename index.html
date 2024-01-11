@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Le Delice Fin</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Le Delice Fin</title>
+
 </head>
+
 <body>
-    <header class="curvas">
-        <div class="logo">
-            <img class="img_logo" src="./media/logo_rosa.png">
-        </div>
-        <nav class="navbar">
-            <ul class="nav_links">
-                <li class="nav_item">
-                    <a href="./index.html" class="nav_link"> Inicio </a>
-                </li>
-                <li class="nav_item subitem">
-                        <a href="./index.html" class="nav_link"> Productos </a>
-                        <ul class="subitem">
-                            <li>
-                                <a href="#"> Box Cake </a>
-                            </li>
-                            <li>
-                                <a href="#"> Tortas </a>
-                            </li>
-                            <li>
-                                <a href="#"> Tartas </a>
-                            </li>
-                            <li>
-                                <a href="#"> Tortas de cumpleaños </a>
-                            </li>
-                        </ul>
-                        
-                </li>
-                
-                <li class="nav_item">
-                        <a href="./index.html" class="nav_link"> Nosotros </a>
-                </li>
-                <li class="nav_item">
-                    <a href="./index.html" class="nav_link"> Contacto </a>
-            </li>
-                
-        </nav>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">
-            <path fill="#f5adb9" fill-opacity="1" d="M0,64L18.5,101.3C36.9,139,74,213,111,229.3C147.7,245,185,203,222,170.7C258.5,139,295,117,332,128C369.2,139,406,181,443,208C480,235,517,245,554,213.3C590.8,181,628,107,665,106.7C701.5,107,738,181,775,224C812.3,267,849,277,886,250.7C923.1,224,960,160,997,122.7C1033.8,85,1071,75,1108,106.7C1144.6,139,1182,213,1218,229.3C1255.4,245,1292,203,1329,197.3C1366.2,192,1403,224,1422,240L1440,256L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
-          </svg>
-        </header>
+  <header class="curvas">
+    <div class="logo">
+      <img class="img_logo" src="./media/logo_rosa.png">
+    </div>
+    <div class="navegador_principal">
+      <span class="nav-bar" id="btnMenu"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></span>
+  <nav class="main-nav">
+      <ul class="menu" id="menu">
+          <li class="menu_item"><a href="#" class="menu_link"> Inicio </a></li>
+          <li class="menu_item container-submenu">
+              <a href="#" class="menu_link submenu-btn"> Productos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></a>
+              <ul class="submenu">
+                  <li class="menu_item"> <a href="#" class="menu_link">Torta de Cumpleaños</a></li>
+                  <li class="menu_item"> <a href="#" class="menu_link">Tortas</a></li>
+                  <li class="menu_item"> <a href="#" class="menu_link">Tartas</a></li>
+                  <li class="menu_item"> <a href="#" class="menu_link">Box Gift</a></li>
+              </ul>
+          </li>
+          <li class="menu_item"><a href="#" class="menu_link"> Nosotros </a></li>
+          <li class="menu_item"><a href="#" class="menu_link"> Contacto </a></li>
+      </ul>
+  </nav>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path fill="#f5adb9" fill-opacity="1"
+        d="M0,64L18.5,101.3C36.9,139,74,213,111,229.3C147.7,245,185,203,222,170.7C258.5,139,295,117,332,128C369.2,139,406,181,443,208C480,235,517,245,554,213.3C590.8,181,628,107,665,106.7C701.5,107,738,181,775,224C812.3,267,849,277,886,250.7C923.1,224,960,160,997,122.7C1033.8,85,1071,75,1108,106.7C1144.6,139,1182,213,1218,229.3C1255.4,245,1292,203,1329,197.3C1366.2,192,1403,224,1422,240L1440,256L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+      </path>
+    </svg>
+  </header>
+
+
+    <script src="./js/menu.js"></script>
 </body>
+
 </html>

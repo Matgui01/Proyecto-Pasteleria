@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     margin:0;
@@ -11,38 +13,135 @@ body{
 .curvas{
     background: #6e392ee7;
     color: #FCFBE7;
-    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
+    
 
 }
-
 
 
 .logo{
-    height: 200px;
-    margin-top: 30px;
-}
-
-
-.nav_links{
     display: flex;
-    justify-content: space-around;
-    width: 70vw;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.curvas svg{
+
+.nav-bar{
+    padding: 20px;
     display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
 }
 
-.parrafo{
-    width: 100vw;
+
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.icono_hamburgesa{
-    width: 20px;
-    height: 20px;
+.menu{
+    width: 100%;
+    margin-left: -100%;
+    transition: all .5s;
+}
+
+.menu_link{
+    display: block;
+    padding: 15px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.menu_link:hover{
+    background-color: pink;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.submenu{
+    gap: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.submenu .menu_link{
+    background-color: transparent;
+    border-radius: 30px;
+    transition: .2s;
+   
+}
+
+.submenu .menu_link:hover{
+    background-color: pink;
+}
+
+.submenu-btn{
+    display: flex;
+    align-items: center;
+}
+
+.mostrar{
+    margin-left: 0;
+}
+@media (min-width:1024px) {
+    .main-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .menu{
+
+        margin-left: 0;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        gap: 50px;
+    }
+    .container-submenu{
+    
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top: 70px;
+        width: 175px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        border: 2px transparent ;
+        border-radius: 30px;
+    }
+    
+   
+    .menu_link:hover{
+        
+    border-radius: 30px;
+    transition: .4s;
+        background-color: pink;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+    }
+   .submenu .menu_link:hover{
+        background-color: pink;
+    }
+}
+
+
+@media (max-width:768px){
+    .logo img{
+        width: 150px;
+        height: 100px;
+    }
 }
