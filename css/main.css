@@ -4,7 +4,7 @@ body{
     height: 100vh;
     width: 100%;
     margin:0;
-    gap: 50px;
+    gap: 100px;
     background-color: #f5adb9;
 
 }
@@ -337,25 +337,6 @@ textarea.input{
     border: transparent 2px solid;
 }
 
-footer{
-    width: 100%;
-    background-color: #6e392ee7;
-    justify-content: space-around;
-    font-family: 'Raleway', sans-serif;
-    color: #FCFBE7;
-
-}
-
-footer a{
-    text-decoration: none;
-}
-
-.container_footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 50px;
-}
 
 .box{
     display: flex;
@@ -444,8 +425,139 @@ footer a{
     color: #6e392ee7;
 }
 
+.slider {
+    margin: auto;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .2);
+}
+
+.w-100 {
+    height: 650px !important;
+    width: 850px !important;
+}
+/*tarjeta*/
+.contenedor_tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+.tarjetas{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 30px;
+}
+.tarjeta_body{
+    width: 100%;
+    
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .1);
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+
+.btn_tarjeta{
+    width: 100%;
+    background-color: #6e392ee7;
+    border: #6e392ee7;    
+}
+.btn_tarjeta:hover{
+    background-color:#f5adb9 ;
+    border: #f5adb9;
+    color: #FCFBE7;
+    transition: .3s;
+}
+
+
+/*sobrenosotros*/
+.nosotros_general{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .2);
+
+}
+
+
+.titulo_nosotros {
+    font-family: 'Dancing Script', cursive;;
+    font-size: xxx-large;
+    color: #6e392ee7;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    width: 90%;
+}
+
+.texto {
+    width: 60%;
+    padding: 0 10% 0 0;
+    padding: 4px;
+}
+
+.parrafo {
+    font-family: 'roboto' sans-serif;
+    font-size: large;
+    color: #6e392ee7;
+    text-align: justify;
+    width: 100%;
+}
+
+.contenedor_imagen {
+    display:flex;
+    align-items: center;
+    width: 40%;
+    padding: 4px;
+}
+
+.img_nosotros {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 3px;
+    
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    background-color: #6e392ee7;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+    color: #FCFBE7;
+
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.container_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
 /* MEDIA QUERY GENERAL */ 
 @media (max-width:1024px){
+    body{
+        gap: 50px;
+    }
     .logo img{
         width: 150px;
         height: 100px;
@@ -523,6 +635,63 @@ footer a{
         flex-direction: column;
     }
 
+    .slider{
+        width: 100%;
+    }
+    .carouselExampleIndicators{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .carousel-inner{
+        width: 100%;
+    }
+    .carousel-item img{
+        width: 100%;
+    }
+    .w-100 {
+        height: 250px ;
+        width: 100% ;   
+    }
+    /*tarjeta*/
+    .contenedor_tarjeta{
+
+    }
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*nosotros*/
+    .nosotros{
+        width: 80%;
+    }
+    .titulo_nosotros{
+        font-size: 30px;
+        color: #6e392ee7;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .nosotros .texto {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nosotros .contenedor_imagen {
+        width: 100%;
+        padding: 4px;
+    }
+    
 }
 
 
